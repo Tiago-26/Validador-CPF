@@ -11,7 +11,7 @@ import javax.ws.rs.QueryParam;
 public class ValidaCPF {
 
 	@GET
-	@Produces("text/plain")
+	@Produces("text/plain ;charset=UTF-8")
 	public String isCPF(@QueryParam("cpf") String CPF) {
 	        // considera-se erro CPF's formados por uma sequencia de numeros iguais
 	        if (CPF.equals("00000000000") ||
